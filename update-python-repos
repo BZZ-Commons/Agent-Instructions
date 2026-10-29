@@ -1,0 +1,27 @@
+# Anleitung (nur für Benutzer, KI ignorieren)
+Instruktionen zum Aktualisieren von Repositories mit Vorlagen für Python-Programmieraufgaben.
+
+# Aktionen (für die KI)
+* Frage den Benutzer nach diesen Angaben:
+  * Name der Github-Organisation (z.B. templates-python)
+  * Filter für die Auswahl der Repos (z.B. m319-lu05)
+  * Welche Formel für die Evaluation in pylintrc eingesetzt werden soll (z.B. intermediate)
+* Alle neuen/geänderten Dateien müssen UTF-8 codiert sein.
+## requirements.txt
+- Prüfen ob alle relevanten Pakete aufgeführt sind, insbesondere pytest und pylint
+- Aktualisiere die Versionen in requirements.txt
+## .github/workflows
+- Aktualisiere die Workflows
+  - Entferne classroom.yml (falls vorhanden)
+  - Falls das Repository Issues enthält:
+    - Kopiere copyissues.yml aus https://github.com/BZZ-Commons/python-template/blob/main/.github/workflows/copyissues.yml
+    - Passe im Workflow die Organisation/Repositorynamen an
+   - Falls der Ordner .github/workflows leer ist, lösche den Ordner
+## Pytest
+- Passe die Namen der Tests in unittest.json und den Testdateien an, so dass der Name eines Tests nicht der Teil eines anderen Testnamens ist. 
+- Stelle sicher, dass in unittests.json alle Pytests aufgeführt sind
+## Pylint
+- Aktualisiere pylintrc gemäss https://github.com/BZZ-Commons/python-template/blob/main/.github/autograding/pylintrc
+- Entferne die nicht benötigen Evalutions-Formeln
+- Stelle sicher, dass in lint.json alle Python-Dateien exkl. Dateien für Unittests aufgeführt sind.
+  * Lasse Dateien weg, die schon in der Vorlage vollständig umgesetzt sind.
