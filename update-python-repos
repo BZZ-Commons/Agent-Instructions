@@ -2,11 +2,20 @@
 Instruktionen zum Aktualisieren von Repositories mit Vorlagen für Python-Programmieraufgaben.
 
 # Aktionen (für die KI)
+## User Input
 * Frage den Benutzer nach diesen Angaben:
   * Name der Github-Organisation (z.B. templates-python)
   * Filter für die Auswahl der Repos (z.B. m319-lu05)
   * Welche Formel für die Evaluation in pylintrc eingesetzt werden soll (z.B. intermediate)
+## Allgemeines
+* Führe die Aktionen in allen Branches der Repos durch.
 * Alle neuen/geänderten Dateien müssen UTF-8 codiert sein.
+## Docstring
+* Stelle sicher, dass alle Python-Dateien korrekte Docstrings haben. Orientiere dich an unseren Standards in https://wiki.bzz.ch/howto/codingstandards/04-kommentare
+  * Module-Docstring
+  * Klassen
+  * Methoden
+  * Funktionen
 ## requirements.txt
 - Prüfen ob alle relevanten Pakete aufgeführt sind, insbesondere pytest und pylint
 - Aktualisiere die Versionen in requirements.txt
