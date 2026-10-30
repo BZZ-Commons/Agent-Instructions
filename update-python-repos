@@ -11,11 +11,22 @@ Instruktionen zum Aktualisieren von Repositories mit Vorlagen für Python-Progra
 * Führe die Aktionen in allen Branches der Repos durch.
 * Alle neuen/geänderten Dateien müssen UTF-8 codiert sein.
 ## Docstring
-* Stelle sicher, dass alle Python-Dateien korrekte Docstrings haben. Orientiere dich an unseren Standards in https://wiki.bzz.ch/howto/codingstandards/04-kommentare
+* Stelle sicher, dass alle Python-Dateien korrekte, englische Docstrings haben. Orientiere dich an unseren Standards in https://wiki.bzz.ch/howto/codingstandards/04-kommentare
   * Module-Docstring
   * Klassen
-  * Methoden
+  * Methoden (ausser @property, @???.setter, @???.deleter)
   * Funktionen
+## Coding-Standards
+  * Grundsätzlich gelten die Codingstandards von PEP 8
+  * Strings immer mit Single Quotes begrenzen. Double quotes nur für Docstring
+  * Alle Bezeichner in englisch
+    * Variablen klein geschrieben, snake_case
+    * Konstanten nur mit Grossbuchstaben
+    * Klassennamen im PascalCase
+    * Pakete in Kleinbuchstaben ohne Underscores
+    * Einrückung konsequent 4 Stellen, Fortsetzungen von Zeilen um 8 Stellen einrücken
+    * Maximal 120 Zeichen pro Zeile
+  * Wo möglich f-Strings verwenden, um Variablen + Konstanten zu konkatenieren
 ## requirements.txt
 - Prüfen ob alle relevanten Pakete aufgeführt sind, insbesondere pytest und pylint
 - Aktualisiere die Versionen in requirements.txt
