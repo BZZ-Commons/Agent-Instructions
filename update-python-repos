@@ -1,5 +1,11 @@
 # Anleitung (nur für Benutzer, KI ignorieren)
-Instruktionen zum Aktualisieren von Repositories mit Vorlagen für Python-Programmieraufgaben.
+Instruktionen zum Aktualisieren von Repositories mit Vorlagen für Python-Programmieraufgaben. Unter anderem
+* Anpassen der Testnamen um Duplikate zu verhindern
+* Aktualisieren von unittest.json und lint.json
+* Aktualisieren der Bewertungen für pylint
+* Entfernen veraltetet Workflows
+* Korrigieren der Codierung aller Dateien (UTF-8)
+* Ergänzen von Docstrings in den Lösungen
 
 # Aktionen (für die KI)
 ## User Input
