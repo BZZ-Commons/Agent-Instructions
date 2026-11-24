@@ -45,6 +45,8 @@ Instruktionen zum Aktualisieren von Repositories mit Vorlagen für Python-Progra
    - Falls der Ordner .github/workflows leer ist, lösche den Ordner
 ## Pytest
 - Passe die Namen der Tests in unittest.json und den Testdateien an, so dass der Name eines Tests nicht der Teil eines anderen Testnamens ist. 
+- Passe die Assert-Befehle so an, dass im Fehlerfall **expected** und **actual** Resultate korrekt angezeigt werden.
+  * In verschiedenen Tests erscheint unter **actual** das erwartete Resultat und bei **expected** die effektive Ausgabe.
 - Stelle sicher, dass in unittests.json alle Pytests aufgeführt sind
 ## Pylint
 - Aktualisiere pylintrc gemäss https://github.com/BZZ-Commons/python-template/blob/main/.github/autograding/pylintrc
