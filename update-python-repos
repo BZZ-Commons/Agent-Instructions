@@ -21,6 +21,7 @@ Instruktionen zum Aktualisieren von Repositories mit Vorlagen für Python-Progra
   * Module-Docstring
   * Klassen
   * Methoden (ausser @property, @???.setter, @???.deleter)
+    * Ausnahme: Wenn eine property, ein setter oder deleter spezielle Verarbeitungen enthält (z.B. Validierung) soll er einen Docstring haben, der darauf hinweist.
   * Funktionen
 ## Coding-Standards
   * Grundsätzlich gelten die Codingstandards von PEP 8
